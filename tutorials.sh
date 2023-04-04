@@ -157,7 +157,26 @@
 #sayhello
 
 #FUNCTIONS WITH PARAMS
-function bio() {
-    echo "My name is $1 and I am a $2"
-}
-bio "Banks" "12"
+#function bio() {
+ #   echo "My name is $1 and I am a $2"
+#}
+#bio "Banks" "12"
+
+
+
+#CREATE FOLDER AND WRITW TO A FILE
+#mkdir another 
+#touch "another/test1.txt"
+#echo "A second test file" >> "another/test1.txt"
+#echo "We have just created a folder, file and wrote into the file"
+
+
+#USE IF STATEMENT TO VALIDATE IF A FOLDER EXISTS AND IF IT DOES, CREATE A NEW FOLDER, FILE.
+if [ -d "folder" ]
+then
+    echo "folder exists"
+    mkdir folder2 
+    touch "folder2/test1.txt"
+    echo "A second test file" >> "folder2/test1.txt"
+    echo "We have just created a folder, file and wrote into the file"
+fi
